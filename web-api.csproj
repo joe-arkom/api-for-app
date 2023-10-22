@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\DTO\**" />
+    <Content Remove="Properties\DTO\**" />
+    <EmbeddedResource Remove="Properties\DTO\**" />
+    <None Remove="Properties\DTO\**" />
+    <_WebToolingArtifacts Remove="Properties\DTO\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
