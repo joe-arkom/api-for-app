@@ -4,18 +4,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace web_api.Entities;
 
-public partial class AppDatabaseContext : DbContext
+public partial class DBContext : DbContext
 {
-    public AppDatabaseContext()
+    public DBContext()
     {
     }
 
-    public AppDatabaseContext(DbContextOptions<AppDatabaseContext> options)
+    public DBContext(DbContextOptions<DBContext> options)
         : base(options)
     {
     }
 
-    public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<User> User { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     { 
